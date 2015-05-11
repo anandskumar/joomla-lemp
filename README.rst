@@ -1,31 +1,29 @@
-Nginx PHP FastCGI Server Configuration - with PHPMyAdmin
+Joomla over LEMP stack
 ========================================================
 
-`Nginx`_ is a web server, load balancer and reverse proxy with a strong
-focus on performance, high concurency (over 10,000 simultaneous
-connections), and low memory usage. It powers many of the world's
-largest websites. Nginx can deploy dynamic HTTP content such as PHP
-scripts using the FastCGI interface.
+Joomla! is an award-winning Content Management System (CMS) for building websites as well as a 
+Model-view-controller (MVC) Web Application Development framework. Features include page caching
+to improve performance, RSS feeds, printable versions of pages, news flashes, blogs, polls, website
+searching, and language internationalization
 
-This appliance includes all the standard features in `TurnKey Core`_,
+This appliance includes all the features in `TurnKey NGinx FastCGI`_,
 and on top of that:
 
-- Nginx configured to proxy PHP requests to the PHP-FastCGI daemon.
-- Includes TurnKey Web Control panel with links to useful
-  references and resources (convenience).
+- Joomla 3.2 configurations:
+    - Installed from upstream source code to /var/www/joomla
 - SSL support out of the box.
-- `PHPMyAdmin`_ administration frontend for MySQL (listening on port
-  12322 - uses SSL).
-- Postfix MTA (bound to localhost) to allow sending of email (e.g.,
-  password recovery).
-- Webmin modules for configuring PHP, MySQL and Postfix.
+- PHPMyAdmin administration frontend for MySQL (listening on port 12322 - uses SSL).
+- Postfix MTA (bound to localhost) to allow sending of email (e.g., password recovery).
+- Webmin modules for configuring Apache2, PHP, MySQL and Postfix.
 
 Credentials *(passwords set at first boot)*
 -------------------------------------------
 
 -  Webmin, SSH, MySQL, phpMyAdmin: username **root**
+-  Joomla: username **admin** 
 
 
+.. _Joomla: http://joomla.org
 .. _Nginx: http://nginx.org
 .. _TurnKey Core: http://www.turnkeylinux.org/core
 .. _PHPMyAdmin: http://www.phpmyadmin.net
